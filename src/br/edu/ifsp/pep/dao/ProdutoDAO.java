@@ -10,7 +10,7 @@ public class ProdutoDAO extends AbstractDAO<Produto>{
     public List<Produto> buscar(){
         //SELECT p FROM Produto p
         TypedQuery<Produto> query = getEntityManager()
-                .createQuery("SELECT p FROM produto p", Produto.class);
+                .createQuery("SELECT p FROM Produto p", Produto.class);
         
         return query.getResultList();    
     }     

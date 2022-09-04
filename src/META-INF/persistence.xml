@@ -2,6 +2,8 @@
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
   <persistence-unit name="introJPAPU" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>br.edu.ifsp.pep.modelo.Categoria</class>
+    <class>br.edu.ifsp.pep.modelo.Produto</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/db_aulajpa?useSSL=false&amp;allowPublicKeyRetrieval=true&amp;useSSL=false&amp;allowPublicKeyRetrieval=true&amp;createDatabaseIfNotExist=true&amp;serverTimezone=UTC&amp;serverTimezone=America/Sao_Paulo"/>
       <property name="javax.persistence.jdbc.user" value="root"/>
